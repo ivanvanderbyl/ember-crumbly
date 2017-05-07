@@ -31,7 +31,12 @@ export default Component.extend({
 
   handlerInfos: computed('currentRouteName', {
     get() {
-      return this.get('router')._routerMicrolib.currentHandlerInfos;
+      let router = this.get('router');
+      if (router._routerMicrolib) {
+        return router._routerMicrolib.currentHandlerInfos;
+      }else{
+        return router.router.currentHandlerInfos;
+      }
     }
   }),
 
