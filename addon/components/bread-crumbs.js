@@ -31,7 +31,7 @@ export default Component.extend({
 
   handlerInfos: computed('currentRouteName', {
     get() {
-      return this.get('router').router.currentHandlerInfos;
+      return this.get('router')._routerMicrolib.currentHandlerInfos;
     }
   }),
 

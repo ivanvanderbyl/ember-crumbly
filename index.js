@@ -1,8 +1,6 @@
-/* jshint node: true */
+/* eslint-env node */
 'use strict';
 
 module.exports = {
-  name: 'ember-crumbly',
-
-  isDevelopingAddon: function() { return true; },
+  name: 'ember-crumbly'
 };
