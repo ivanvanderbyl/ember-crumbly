@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import layout from '../templates/components/bread-crumb';
-import computed from 'ember-new-computed';
+import computed from 'ember-computed';
 
 const {
   Component

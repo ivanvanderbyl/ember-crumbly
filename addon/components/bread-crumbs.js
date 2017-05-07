@@ -1,7 +1,6 @@
 import Ember from 'ember';
 import layout from '../templates/components/bread-crumbs';
-import computed from 'ember-new-computed';
-import getOwner from 'ember-getowner-polyfill';
+import computed from 'ember-computed';
 
 const {
   get,
@@ -10,7 +9,8 @@ const {
   typeOf,
   setProperties,
   A: emberArray,
-  String: { classify }
+  String: { classify },
+  getOwner
 } = Ember;
 const {
   bool,
